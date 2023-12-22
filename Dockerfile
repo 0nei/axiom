@@ -6,6 +6,7 @@ RUN apt-get update \
 
 WORKDIR /root/.axiom
 RUN git clone https://github.com/0nei/axiom /root/.axiom/
+RUN mkdir /root/target-data
 
 ENV PATH="${PATH}:/root/.axiom/interact"
 ENTRYPOINT ["/bin/zsh"]
